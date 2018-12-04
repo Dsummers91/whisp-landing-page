@@ -1,4 +1,4 @@
-html { 
+body { 
   background: url(/images/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,6 +16,16 @@ html {
   margin: 0 auto;
 }
 
+section > div {
+  border: 1px solid gold;
+  padding: 3px 5px;
+  border-radius: 9px;
+}
+
+button {
+  border-radius: 4px;
+}
+
 /* HEADER */
 section#header {
   display: block;
@@ -25,13 +35,14 @@ section#header {
 
 section#header > div {
   display: inline-block;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0,0,40, .5);
   margin: 0 auto;
-  padding: 3px 5px;
-  border-radius: 9px;
 }
 
-section#header > div > h1, h2, h3, p {
+section#header > div > h1, 
+section#header > div > h2,
+section#header > div > h3,
+section#header > div > p {
   display: inline-block;
   color: rgba(64,224,208,1);
   opacity: 1;
@@ -41,15 +52,51 @@ section#header > div > h1, h2, h3, p {
 /* DETAILS SECTION */
 section#details {
   float: left;
-  background-color: yellow;
+  background-color: #FDFDFD;
   display: block;
   min-width: 40%;
 }
 
 /* SUBSCRIBE SECTION */
 section#subscribe {
+  top: 50%;
   min-width: 20%;
   float: right;
-  background-color: pink;
   display: block;
+  position: absolute;
+  right: 3%;
+  color: black;
 }
+
+section#subscribe > div {
+  background-color: rgba(0,0,40, .5);
+}
+
+#subscribe-input-label {
+
+}
+
+/* DETAILS SECTION */
+section#details {
+  float: left;
+  display inline-block;
+}
+
+
+/* Subscription Form */
+
+.subscription-form {
+  background: #0c3e5f;
+  color: #fefefe;
+  padding: 2rem;
+  border-radius: 0;
+  text-align: center;
+}
+
+.subscription-form .button {
+  margin-bottom: 0;
+  border-radius: 0 0 0 0;
+  color: black;
+}
+
+
