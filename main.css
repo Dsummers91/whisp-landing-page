@@ -1,0 +1,55 @@
+html { 
+  background: url(/images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+/* HEADER */
+section#header {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section#header > div {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 0 auto;
+  padding: 3px 5px;
+  border-radius: 9px;
+}
+
+section#header > div > h1, h2, h3, p {
+  display: inline-block;
+  color: rgba(64,224,208,1);
+  opacity: 1;
+}
+
+
+/* DETAILS SECTION */
+section#details {
+  float: left;
+  background-color: yellow;
+  display: block;
+  min-width: 40%;
+}
+
+/* SUBSCRIBE SECTION */
+section#subscribe {
+  min-width: 20%;
+  float: right;
+  background-color: pink;
+  display: block;
+}
