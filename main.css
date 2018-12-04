@@ -26,6 +26,10 @@ button {
   border-radius: 4px;
 }
 
+input {
+  color: black;
+}
+
 /* HEADER */
 section#header {
   display: block;
@@ -59,12 +63,12 @@ section#details {
 
 /* SUBSCRIBE SECTION */
 section#subscribe {
-  top: 50%;
+  top: 30%;
   min-width: 20%;
   float: right;
   display: block;
   position: absolute;
-  right: 3%;
+  right: 15%;
   color: black;
 }
 
