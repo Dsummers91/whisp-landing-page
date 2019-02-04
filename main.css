@@ -1,5 +1,5 @@
 body { 
-  background: url(/images/bg.jpg) no-repeat center center fixed; 
+  background: url(/images/background.svg) repeat-y center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,8 +16,16 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  width: 800px;
+}
+
 section > div {
-  border: 1px solid gold;
+  border: 1px solid white;
   padding: 3px 5px;
   border-radius: 9px;
 }
@@ -30,50 +38,20 @@ input {
   color: black;
 }
 
-/* HEADER */
-section#header {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-
-section#header > div {
-  display: inline-block;
-  background-color: rgba(0,0,40, .5);
-  margin: 0 auto;
-}
-
-section#header > div > h1, 
-section#header > div > h2,
-section#header > div > h3,
-section#header > div > p {
-  display: inline-block;
-  color: rgba(64,224,208,1);
-  opacity: 1;
-}
-
-
-/* DETAILS SECTION */
-section#details {
-  float: left;
-  background-color: #FDFDFD;
-  display: block;
-  min-width: 40%;
-}
-
 /* SUBSCRIBE SECTION */
 section#subscribe {
-  top: 30%;
-  min-width: 20%;
-  float: right;
+  top: 25%;
+  min-width: 25%;
+  max-width: 500px;
   display: block;
   position: absolute;
-  right: 15%;
-  color: black;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
 }
 
 section#subscribe > div {
-  background-color: rgba(0,0,40, .5);
+  background-color: blue;
 }
 
 #subscribe-input-label {
@@ -88,6 +66,11 @@ section#details {
 
 
 /* Subscription Form */
+#email-button, #email-input {
+  width: 80%;
+  padding: 0px;
+  margin: 0 auto;
+}
 
 .subscription-form {
   background: #0c3e5f;
@@ -95,6 +78,7 @@ section#details {
   padding: 2rem;
   border-radius: 0;
   text-align: center;
+
 }
 
 .subscription-form .button {
@@ -104,3 +88,24 @@ section#details {
 }
 
 
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
