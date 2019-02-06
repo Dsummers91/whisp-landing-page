@@ -1,9 +1,46 @@
 body { 
-  background: url(/images/background.svg) repeat-y center center fixed; 
+  background: url(/images/background.svg);
+  background-size: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* SUBSCRIBE SECTION */
+section#subscribe {
+  top: 25%;
+  min-width: 25%;
+  max-width: 500px;
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  color: #F1F1ED;
+  text-align: center;
+}
+
+section#subscribe > div {
+  background-color: #020099;
+}
+
+
+/* DETAILS SECTION */
+@media screen and (max-width: 800px) {
+  body {
+    background: url(/images/background-small.svg) repeat-y center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  section#subscribe {
+    max-width: 92%;
+    min-width: 25%;
+  }
+  .h3, h3 {
+    font-size: 1.7rem !important;
+  }
 }
 
 .clearfix {
@@ -25,7 +62,6 @@ body {
 }
 
 section > div {
-  border: 1px solid white;
   padding: 3px 5px;
   border-radius: 9px;
 }
@@ -38,27 +74,6 @@ input {
   color: black;
 }
 
-/* SUBSCRIBE SECTION */
-section#subscribe {
-  top: 25%;
-  min-width: 25%;
-  max-width: 500px;
-  display: block;
-  position: absolute;
-  margin: 0 auto;
-  color: white;
-  text-align: center;
-}
-
-section#subscribe > div {
-  background-color: blue;
-}
-
-#subscribe-input-label {
-
-}
-
-/* DETAILS SECTION */
 section#details {
   float: left;
   display inline-block;
@@ -70,6 +85,11 @@ section#details {
   width: 80%;
   padding: 0px;
   margin: 0 auto;
+  margin-bottom: 11px;
+}
+
+#email-input {
+  margin-top: 8px;
 }
 
 .subscription-form {
@@ -78,7 +98,11 @@ section#details {
   padding: 2rem;
   border-radius: 0;
   text-align: center;
+}
 
+#subscription-form {
+  padding: 10px;
+  box-shadow: 5px 7px 2px rgba(0, 0, 0, .5);
 }
 
 .subscription-form .button {
@@ -108,4 +132,36 @@ section#details {
     transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+#email-button {
+  color: #F1F1ED;
+  background-color: #020099;
+  border: 2px solid white;
+
+}
+
+#email-input {
+  text-align: center;
+}
+
+#whisp-img-container {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+#whisp-img-container > img {
+  max-width:100%;
+  height: auto;
+}
+
+
+#value-prop {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.h3, h3 {
+    font-size: 23px;
 }
